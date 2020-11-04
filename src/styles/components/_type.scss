@@ -1,12 +1,15 @@
+
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: $size-text;
+  font-size: ms(0);
   line-height: 1.5;
   color:white;
 }
 
 .text-small {
   display: inline-block;
+  font-weight: 300;
+  font-size: ms(-2);
 }
 .title {
   font-weight: 300;
@@ -19,8 +22,6 @@ body {
   &--medium {
 
   }
-
-
 
   &--bold {
     font-weight: 700;
