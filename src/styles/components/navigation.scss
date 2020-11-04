@@ -60,7 +60,6 @@ ul {
 .link {
   color:$c-alt;
   text-decoration: none;
-  border-bottom: 1px solid $c-alt;
   cursor: pointer;
   transition-duration: 0.3s;
   padding-bottom: 0px;
@@ -92,8 +91,14 @@ ul {
     }
   }
   &--selected {
-    background-color:white;
-    color:$c-darker;
+    border-bottom:white solid 2px;
     cursor:pointer;
   }
+  &--donate {
+    border: #fff solid 2px;
+  }
+}
+.link--donation, .link--partner {
+  padding: 10px;
+  border: solid white 2px;
 }
