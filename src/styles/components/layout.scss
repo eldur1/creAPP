@@ -34,6 +34,29 @@
     &__about {
     }
   }
+  &--footer {
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $c-darker;
+      text-align: center;
+      .nav {
+        &--footer {
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+          line-height: 32px;
+          max-width: 780px;
+          margin:auto;
+          padding-top:188px;
+        }
+      }
+      &__copyright {
+          text-align: center;
+          margin:32px 0px 32px 0px;
+      }
+
+  }
 
 }
 
@@ -42,5 +65,11 @@
   width: 58px;
   &--full {
     width: 280px;
+  }
+  &--footer {
+    position: absolute;
+    width:150px;
+    text-align: left;
+    margin-top:-74px;
   }
 }

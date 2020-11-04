@@ -1,4 +1,11 @@
+@import '~modularscale-sass/stylesheets/modularscale';
+
+$modularscale: (
+  base: 1em,
+  ratio: 1.25
+);
+
+
 $c-dark: #1F1F1F;
-$c-darker: black;
-$size-text : 16px;
+$c-darker: #141414;
 $c-alt:white;
