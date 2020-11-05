@@ -49,12 +49,14 @@ ul {
     padding-top:188px;
   }
   &--main {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, rgba(31,31,31,1) 90%, rgba(255,255,255,0) 100%);
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0 20px 0;
   }
 }
 
@@ -85,6 +87,7 @@ ul {
   &--main {
     border-bottom: none;
     padding:8px 12px 8px 12px;
+    transition: background-color 0.3s ease;
     &:hover {
       background-color:white;
       color:$c-darker;
