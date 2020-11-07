@@ -54,9 +54,9 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(180deg, rgba(31,31,31,1) 90%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 100%, rgba(255,255,255,0) 100%);
     width: 100%;
-    padding: 10px 0 20px 0;
+    padding-bottom: 10px;
   }
 }
 
