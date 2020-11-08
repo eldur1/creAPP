@@ -41,9 +41,12 @@ ul {
   position: absolute;
   left:100%;
   top:0%;
+  width:100%;
+  background-color: $c-darker;
   .list {
     &--main__li {
       display: block;
+      text-align: center;
     }
   }
   @include tbx {
@@ -59,6 +62,8 @@ ul {
     .list {
       &--main__li  {
         display: inline-block;
+        text-align: inherit;
+
       }
     }
   }
@@ -78,6 +83,9 @@ ul {
   &--main {
     position: sticky;
     top:0px;
+    
+    z-index:4;
+
   }
 }
 
@@ -119,6 +127,10 @@ ul {
   }
   &--donate {
     border: #fff solid 2px;
+  }
+  &--close-menu {
+    background-color:white;
+    color:black;
   }
 }
 .link--donation, .link--partner {

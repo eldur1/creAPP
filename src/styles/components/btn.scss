@@ -1,0 +1,6 @@
+.arrow {
+    margin:auto;
+    @include tbx {
+        display: none;
+    }
+}

@@ -19,6 +19,7 @@
     <div class="rainbow"></div>
   </div>
   <section class="section section--intro">
+
     <div class="section--intro__logo">
       <h1 class="title title--bigger">Give</h1>
       <img class="logo logo--full" src="assets/images/logo--white.png" alt="logo">
@@ -34,9 +35,9 @@
     <nav class="nav nav--main">
       <button class="burger-menu">
         <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
-          <rect width="100" height="20"></rect>
-          <rect y="30" width="100" height="20"></rect>
-          <rect y="60" width="100" height="20"></rect>
+          <rect width="80" height="15"></rect>
+          <rect y="35" width="80" height="15"></rect>
+          <rect y="65" width="80" height="15"></rect>
         </svg>
       </button>
       <div class="nav-container">
@@ -57,74 +58,82 @@
     
           <!--<img alt="logo" src="assets/images/logo.png" class="logo logo--nav">-->
           <ul class="list list--main">
-            <li class="list list--main__li"><a class="link link--main link--selected" href="index.html">Project</a></li>
-            <li class="list list--main__li"><a class="link link--main" href="team.html">Team</a></li>
+            <li class="list list--main__li"><a class="link link--main" href="#project">Project</a></li>
+            <li class="list list--main__li"><a class="link link--main" href="#team">Team</a></li>
             <li class="list list--main__li"><a class="link link--main" href="markdown.html">Case study</a></li>
-            <li class="list list--main__li"><a class="link link--main" href="join_us.html">Join Us</a></li>
-            <li class="list list--main__li"><a class="link link--main link--donate" href="donate.html">Donate</a></li>
+            <li class="list list--main__li"><a class="link link--main" href="#join_us">Join Us</a></li>
+            <li class="list list--main__li"><a class="link link--main link--donate" href="#donate">Donate</a></li>
+            <li class="list list--main__li"><a class="link link--main link--close-menu">Close menu</a></li>
           </ul>
       </div>
     </nav>
-
+    <span id="project" class="anchor anchor--project"></span>
     <section class="section section--content">
       <div class="section--content__about">
         <h3 class="title title--medium">Give for good</h3>
         <p>Sur Terre, il y a des milliers d’associations, chacune là pour aider à régler des problématiques, parfois mondiale mais parfois à plus petite échelle. Certaines cherchent à guérir des maladies, d’autres à sauver des animaux en voie de disparitions et d’autres encore à nourrir les gens du tiers-monde. Aujourd’hui, on peut dire qu’il y a des associations pour d’innombrables problématiques.</p>
         <p>Give vous permet d’apporter votre pierre à l’édifice, même si vous ne connaissez aucune association dans le monde ou si vous ne savez simplement pas dans laquelle vous engager. Faites un don de 5€ à une association aléatoire de notre base de données.</p>
-        <a class="link link--donation" href="#">Make a donation</a>
+        <a class="link link--donation" href="#donate">Make a donation</a>
 
         <!-- Borne en 3D-->
       <div class="borne"></div>
       </div>
     </section>
+    <span id="join_us" class="anchor anchor--project"></span>
     <section class="section--content__join">
       <h3 class="title title--medium">Join Us</h3> 
       <p>Notre base de données comporte aujourd’hui de nombreuses associations de tous types. Enrichissez-la en y ajoutant la vôtre si elle n’en fait pas déjà partie !</p>
       <a class="link link--partner" href="#">Be partner</a>
     </section>
+    <span id="team" class="anchor anchor--project"></span>
     <section class="section section--team">
       <h2 class="title title--big">Our Team</h2>
       <div class="team-grid">
         <div class="members">
-          <img src="assets/images/team/ludo.png" alt="Photo de profil" class="member">
+          <img src="assets/images/team/ludo.jpg" alt="Photo de profil" class="member">
           <p class="desc"></p>
-          <a href="#">Site</a>
+          <a class="link link--members" target="_blank" href="https://ludodec.be">Site perso</a>
         </div>
         <div class="members">
-          <img src="assets/images/team/elie.png" alt="Photo de profil" class="member">
-          <p class="desc"></p>
-          <a href="#">Site</a>
+          <img src="assets/images/team/elie.jpg" alt="Photo de profil" class="member">
+          <p class="desc">Il s’est occupé du Javascript et de générer le QR code avec une association aléatoire. </p>
+          <a class="link link--members" target="_blank" href="https://eliedur.be">Site perso</a>
         </div>
         <div class="members">
-          <img src="assets/images/team/aureliane.png" alt="Photo de profil" class="member">
+          <img src="assets/images/team/aureliane.jpg" alt="Photo de profil" class="member">
           <p class="desc"></p>
-          <a href="#">Site</a>
+          <a class="link link--members" target="_blank" href="http://aurelianeferard.be/">Site perso</a>
         </div>
         <div class="members">
-          <img src="assets/images/team/will.png" alt="Photo de profil" class="member">
+          <img src="assets/images/team/will.jpg" alt="Photo de profil" class="member">
           <p class="desc"></p>
-          <a href="#">Site</a>
+          <a class="link link--members" target="_blank" href="http://williamblanchy.be/">Site perso</a>
         </div>
         <div class="members">
-          <img src="assets/images/team/jerome.png" alt="Photo de profil" class="member">
+          <img src="assets/images/team/jerome.jpg" alt="Photo de profil" class="member">
           <p class="desc"></p>
-          <a href="#">Site</a>
+          <a class="link link--members" target="_blank" href="#">Site perso</a>
         </div>
       </div>
+    </section>
+    <span id="donate" class="anchor anchor--project"></span>
+    <section class="section section--donate">
+      <h3>Coucou</h3>
+      <svg id='elemid'></svg>
     </section>
     <footer class="section section--footer">
         <nav class="nav nav--footer">
         <img class="logo logo--footer" src="assets/images/logo--white.png" alt="logo">
         <ul class="list list--footer list--location">
             <li class="list--footer__li">Visit me</li>
-            <li class="list--footer__li"><a class="link link--footer link--italic" href="#">Place d’armes 5000 <br> Namur 🇧🇪</a></li>
+            <li class="list--footer__li"><a class="link link--footer link--italic" target="_blank" href="https://goo.gl/maps/zkkatNTLJ46jHK356">Place d’armes 5000 <br> Namur 🇧🇪</a></li>
           </ul>
           <ul class="list list--footer">
             <li class="list--footer__li">Navigation</li>
             <li class="list--footer__li"><a class="link link--footer" href="#">Project</a></li>
             <li class="list--footer__li"><a class="link link--footer" href="markdown.html">Case study</a></li>
-            <li class="list--footer__li"><a class="link link--footer" href="team.html">Team</a></li>
-            <li class="list--footer__li"><a class="link link--footer" href="join_us.html">Join us</a></li>
+            <li class="list--footer__li"><a class="link link--footer" href="#team">Team</a></li>
+            <li class="list--footer__li"><a class="link link--footer" href="#join_us">Join us</a></li>
           </ul>
           <ul class="list list--footer">
             <li class="list--footer__li">Portfolio's</li>
