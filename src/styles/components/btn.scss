@@ -4,3 +4,17 @@
         display: none;
     }
 }
+.random-btn {
+    margin: 0 auto;
+    border: solid 3px #fff;
+    color: #fff;
+    background: inherit;
+    padding: 16px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        color: #141414;
+        background-color: #fff;
+    }
+}
