@@ -90,9 +90,13 @@
     width: 60px;
     height: 60px;
     margin: 0 0 0 32px;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     z-index: 1;
+    @include tbx {
+      position: relative;
+    }
+
   }
   &--footer {
     position: absolute;

@@ -26,3 +26,25 @@ let dynamicOpacity = 1 - (nav_pos_top/wHeight);
 nav_main.style.opacity = dynamicOpacity;
 
 });
+
+
+// Burger menu 
+let toggle = true;
+let burger = document.querySelector('.burger-menu');
+burger.addEventListener('click', toggleMenu);
+function toggleMenu() {
+
+    if(toggle) {
+        gsap.to(nav_main, {
+            left:"50%"
+        });
+        toggle = false;
+    }
+    else {
+        gsap.to(nav_main, {
+            left:"100%"
+        });
+        toggle = true;
+    }
+
+}

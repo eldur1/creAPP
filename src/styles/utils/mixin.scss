@@ -1,0 +1,90 @@
+@mixin smxx{
+    @media (min-width: #{$screen-smxx}){
+        @content;
+    }
+}
+
+@mixin sm{
+    @media (min-width: #{$screen-sm}){
+        @content;
+    }
+}
+
+@mixin smx{
+    @media (min-width: #{$screen-smx}){
+        @content;
+    }
+}
+
+@mixin tb{
+    @media (min-width: #{$screen-tb}){
+        @content;
+    }
+}
+
+@mixin tbx{
+    @media (min-width: #{$screen-tbx}){
+        @content;
+    }
+}
+
+@mixin lg{
+    @media (min-width: #{$screen-lg}){
+        @content;
+    }
+}
+
+@mixin lgx{
+    @media (min-width: #{$screen-lgx}){
+        @content;
+    }
+}
+
+@mixin xl{
+    @media (min-width: #{$screen-xl}){
+        @content;
+    }
+}
+
+@mixin xxl{
+    @media (min-width: #{$screen-xxl}){
+        @content;
+    }
+}
+
+@mixin smallest-h {
+    @media (min-height: #{$screen-smallest-h}){
+        @content;
+    }   
+}
+
+@mixin smaller-h {
+    @media (min-height: #{$screen-smaller-h}){
+        @content;
+    }   
+}
+
+@mixin small-h {
+    @media (min-height: #{$screen-small-h}){
+        @content;
+    }   
+}
+
+@mixin medium-h {
+    @media (min-height: #{$screen-medium-h}){
+        @content;
+    }   
+}
+
+@mixin big-h {
+    @media (min-height: #{$screen-big-h}){
+        @content;
+    }   
+}
+
+
+@mixin bigger-h {
+    @media (min-height: #{$screen-bigger-h}){
+        @content;
+    }   
+}
