@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px){
+    .title {
+        font-weight: 300;
+        &--bigger {
+          display: none;;
+        }
+        &--big {
+          font-size: 1.25rem;
+        }
+        &--medium {
+          font-size: 3.815rem;
+          font-weight: 500;
+        }
+      
+        &--bold {
+          font-weight: 700;
+        }
+      }
+
+      .logo {
+        width: 58px;
+        &--full {
+          width: 80%;
+          margin: 0 0 70px 0;
+        }
+        &--nav {
+          width: 60px;
+          height: 60px;
+          margin: 0 0 0 32px;
+          position: absolute;
+          overflow: hidden;
+          display: none; // Il est casse couille
+          z-index: 1;
+          @include tbx {
+            position: relative;
+          }
+      
+        }
+        &--footer {
+          position: absolute;
+          width:150px;
+          text-align: left;
+          margin-top:-74px;
+        }
+      }
+}
+
+@media screen and (min-width: 1024px) {
+    
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
+

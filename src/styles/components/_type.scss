@@ -17,14 +17,18 @@ body {
     display: none;;
   }
   &--big {
-    font-size: 1.25rem;
+    font-size: ms(0);
   }
   &--medium {
-    font-size: 3.815rem;
+    font-size:ms(4);
     font-weight: 500;
   }
 
   &--bold {
     font-weight: 700;
   }
+}
+
+.section--intro__scrollable p {
+  font-size: ms(-1);
 }
