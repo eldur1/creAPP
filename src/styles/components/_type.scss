@@ -2,7 +2,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: ms(0);
-  line-height: 1.5;
+  line-height: 1.25;
   color:white;
 }
 
@@ -20,13 +20,17 @@ body {
     font-size: ms(0);
   }
   &--medium {
-    font-size:ms(4);
+    font-size:ms(2);
     font-weight: 500;
   }
 
   &--bold {
     font-weight: 700;
   }
+}
+
+p {
+  font-weight: 100;
 }
 
 .section--intro__scrollable p {
