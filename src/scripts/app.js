@@ -14,18 +14,23 @@ gsap.registerPlugin(ScrollTrigger);
 // 
 
 // Position of nav--main in the window
-let nav_main = document.querySelector(".nav--main");
+let nav_main = document.querySelector(".nav-container");
 let wHeight = window.innerHeight;
 
-
-
-window.addEventListener('scroll', () => {
-let nav_pos = nav_main.getBoundingClientRect();
-let nav_pos_top = nav_pos.top;
-let dynamicOpacity = 1 - (nav_pos_top/wHeight);
-nav_main.style.opacity = dynamicOpacity;
-
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 900) {
+        window.addEventListener('scroll', () => {
+            let nav_pos = nav_main.getBoundingClientRect();
+            let nav_pos_top = nav_pos.top;
+            let dynamicOpacity = 1 - (nav_pos_top/wHeight);
+            nav_main.style.opacity = dynamicOpacity;
+            });
+    }
+    else {
+        nav_main.style.opacity = 1;
+    }
 });
+
 
 
 // Burger menu 
@@ -36,13 +41,13 @@ function toggleMenu() {
 
     if(toggle) {
         gsap.to(nav_main, {
-            left:"50%"
+            x:"-200px"
         });
         toggle = false;
     }
     else {
         gsap.to(nav_main, {
-            left:"100%"
+            x:"0"
         });
         toggle = true;
     }

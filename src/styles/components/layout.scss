@@ -92,6 +92,7 @@
     margin: 0 0 0 32px;
     position: absolute;
     overflow: hidden;
+    display: none; // Il est casse couille
     z-index: 1;
     @include tbx {
       position: relative;
