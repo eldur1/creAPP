@@ -2,7 +2,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: ms(0);
-  line-height: 1.25;
+  font-weight: 300;
+  line-height: 1.5;
   color:white;
 }
 
@@ -14,29 +15,30 @@ body {
 .title {
   font-weight: 300;
   &--bigger {
-    display: none;;
+    display: none;
   }
   &--big {
     font-size: ms(0);
   }
   &--medium {
-    font-size:ms(2);
+    font-size: 25px;
     font-weight: 500;
   }
 
   &--bold {
     font-weight: 700;
   }
-
-  &--donate {
-    text-align: center;
-  }
 }
 
-p {
-  font-weight: 100;
+
+.asso-name {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .section--intro__scrollable p {
   font-size: ms(-1);
 }
+
