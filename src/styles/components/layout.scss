@@ -177,3 +177,15 @@ html {
 .donation-btn, .asso-descr, .asso-name, #elemid {
   display: none;
 }
+
+.associations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+.assos , .assos img {
+  width: 100px;
+  margin: 10px;
+}
