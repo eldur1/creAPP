@@ -126,6 +126,10 @@ ul {
       padding-bottom: 8px;
     }
   }
+  &--members {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
   &--selected {
     border-bottom:white solid 2px;
     cursor:pointer;

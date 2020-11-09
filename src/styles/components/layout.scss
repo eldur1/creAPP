@@ -154,15 +154,26 @@ html {
 }
 
 .desc {
+  @include tbx {
+    margin-top: -70px;
+
+  }
   max-width: 300px;
 }
+
 .anchor{
   display: block;
   height: 112px;
   margin-top: -113px; 
   visibility: hidden;
-}
+  @include tbx {
 
+  }
+}
+.asso-name, .asso-descr {
+  margin-left:30px;
+  max-width: 550px;
+}
 .donation-btn, .asso-descr, .asso-name, #elemid {
   display: none;
 }

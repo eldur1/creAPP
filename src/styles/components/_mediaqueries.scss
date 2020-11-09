@@ -90,9 +90,7 @@
 
 @media screen and (min-width: 900px) {
   .section {
-    &:not(.section--intro):not(.section--footer):not(.section--main) {
-      margin:10em 10em 0 10em ;
-    }
+
   }
   .alignLeft {
     width: 550px;
