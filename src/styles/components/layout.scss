@@ -116,6 +116,9 @@ html {
 .link {
   display: block;
   margin: 16px auto 0;
+  &--members:hover {
+    text-decoration: underline;
+  }
 }
 
 .link--donation, .link--partner {
@@ -132,7 +135,7 @@ html {
 }
 
 .team-grid .members {
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .members {
