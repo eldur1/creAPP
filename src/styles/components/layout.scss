@@ -72,14 +72,8 @@ html {
   }
 }
 
-.team-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .alignLeft {
-  margin-left: 5%;
+  margin-left: 30px;
 }
 
 .borne{
@@ -87,6 +81,7 @@ html {
   width: 90%;
   height: 500px;
   background-color: grey;
+  margin: 10% auto 0;
 }
 
 
@@ -127,6 +122,20 @@ html {
   border: solid white 2px;
   width: fit-content;
   margin-top: 32px;
+}
+
+.team-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-grid .members {
+  margin-bottom: 100px;
+}
+
+.members .link {
+  margin: 16px 0 0 0;
 }
 
 .member{
