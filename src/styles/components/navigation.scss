@@ -96,6 +96,8 @@ ul {
 }
 
 .link {
+  display: block;
+  margin: 16px auto 0;
   color:$c-alt;
   text-decoration: none;
   cursor: pointer;
@@ -126,9 +128,17 @@ ul {
       padding-bottom: 8px;
     }
   }
+  &--text{
+    display: none;
+    text-decoration: underline;
+    color: red;
+  }
   &--members {
     font-weight: bold;
     text-transform: uppercase;
+  }
+  &--members:hover {
+    text-decoration: underline;
   }
   &--selected {
     border-bottom:white solid 2px;

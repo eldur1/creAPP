@@ -22,7 +22,7 @@
 
   .section {
     &:not(.section--intro):not(.section--footer):not(.section--main) {
-      margin:80px auto;
+      margin:20px auto;
     }
   }
 
@@ -72,7 +72,7 @@
   }
 
   .link {
-    margin: 16px 0 0 30px;
+    margin: 32px auto;
   }
 
   .nav {
@@ -92,10 +92,6 @@
 }
 
 @media screen and (min-width: 900px) {
-  .alignLeft {
-    width: 550px;
-  }
-
   .logo {
     &--nav {
       width: 50px;
@@ -141,13 +137,5 @@
     flex-direction: row-reverse;
   }
 }
-}
-
-@media screen and (min-width: 1440px) {
-  .section {
-    &:not(.section--intro):not(.section--footer):not(.section--main) {
-      margin:15em 20em 0 20em ;
-    }
-  }
 }
 

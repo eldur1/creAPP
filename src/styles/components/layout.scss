@@ -132,14 +132,6 @@ html {
   }
 }
 
-.link {
-  display: block;
-  margin: 16px auto 0;
-  &--members:hover {
-    text-decoration: underline;
-  }
-}
-
 .link--donation, .link--partner {
   padding: 10px;
   border: solid white 2px;
@@ -183,7 +175,7 @@ html {
 .anchor{
   display: block;
   height: 112px;
-  margin-top: -113px; 
+  margin-top: -80px; 
   visibility: hidden;
   @include tbx {
 
@@ -202,7 +194,7 @@ html {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 480px;
 }
 .assos , .assos img {
   width: 100px;
