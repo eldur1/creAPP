@@ -386,27 +386,47 @@ import { _numWithUnitExp } from 'gsap/gsap-core';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
-// QR Code
-import { girocode } from "@dipser/epc-qr-code.js";
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
-let randomNumber = getRandomInt(datas.length);
-let name = datas[randomNumber].Name;
-let link = datas[randomNumber].Link;
-let iban = datas[randomNumber].IBAN;
-let description = datas[randomNumber].Description;
-var g = girocode({
-    'name': name, 
-    'iban': iban,
-    'currency': 'EUR',
-    'amount': '5.00',
-    'reason': 'Invoice X' 
+// QR Code
+import { girocode } from "@dipser/epc-qr-code.js";
+
+let assoName = document.querySelector('.asso-name');
+let descrArea = document.querySelector('.asso-descr');
+let qrCode = document.querySelector('#elemid');
+let donationBtn = document.querySelector('.donation-btn');
+let randomBtn = document.querySelector(".random-btn");
+randomBtn.addEventListener("click", (e) => {
+    let randomNumber = getRandomInt(datas.length);
+    let name = datas[randomNumber].Name;
+    let link = datas[randomNumber].Link;
+    let iban = datas[randomNumber].IBAN;
+    let description = datas[randomNumber].Description;
+    var g = girocode({
+        'name': name, 
+        'iban': iban,
+        'currency': 'EUR',
+        'amount': '5.00',
+        'reason': 'Invoice X' 
+    });
+    qrCode.innerHTML = g.svg();
+    randomBtn.style.display = "none";
+    donationBtn.style.display = "block";
+    descrArea.innerHTML = description;
+    descrArea.style.display = "block";
+    assoName.innerHTML = name;
+    assoName.style.display = "block";
+    assoName.setAttribute("href", link);
+    qrCode.style.display = "block";
 });
-document.querySelector('#elemid').innerHTML = g.svg();
+
+
+
+
+
+
 
 // 
 
