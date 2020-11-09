@@ -23,6 +23,10 @@
     align-items: initial;
   }
 
+  .team-grid .members {
+    margin-bottom: 100px;
+  }
+
   .alignLeft {
     width: 450px;
   }
@@ -60,8 +64,13 @@
     &--footer {
       max-width: 600px;
       margin: auto;
+
+      & .link {
+        margin: 16px 0 0 0;
+      }
     }
   }
+  
   .nav ul {
     padding: 0;
   }
@@ -80,6 +89,7 @@
 
   .nav--footer {
     margin: auto;
+    padding-top:188px;
 }
   .nav {
     &--footer {
