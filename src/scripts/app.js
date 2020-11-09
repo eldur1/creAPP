@@ -423,6 +423,42 @@ randomBtn.addEventListener("click", (e) => {
 });
 
 
+// menu
+
+let projectBtn = document.querySelector(".link--project");
+let teamBtn = document.querySelector(".link--team");
+let joinBtn = document.querySelector(".link--join");
+let donateBtn = document.querySelector(".link--donate");
+let sectionProject = document.querySelector(".section--content");
+let sectionJoin = document.querySelector(".section--join");
+let sectionTeam = document.querySelector(".section--team");
+let sectionDonate = document.querySelector(".section--donate");
+
+projectBtn.addEventListener("click", (e) => {
+    sectionProject.style.display = "block";
+    sectionTeam.style.display = "none";
+    sectionJoin.style.display = "none";
+    sectionDonate.style.display = "none";
+});
+teamBtn.addEventListener("click", (e) => {
+    sectionProject.style.display = "none";
+    sectionTeam.style.display = "block";
+    sectionJoin.style.display = "none";
+    sectionDonate.style.display = "none";
+});
+joinBtn.addEventListener("click", (e) => {
+    sectionProject.style.display = "none";
+    sectionTeam.style.display = "none";
+    sectionJoin.style.display = "block";
+    sectionDonate.style.display = "none";
+});
+donateBtn.addEventListener("click", (e) => {
+    sectionProject.style.display = "none";
+    sectionTeam.style.display = "none";
+    sectionJoin.style.display = "none";
+    sectionDonate.style.display = "block";
+});
+
 
 
 
