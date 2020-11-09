@@ -416,6 +416,13 @@ randomBtn.addEventListener("click", (e) => {
     qrCode.style.display = "block";
 });
 
+
+
+
+
+
+// 
+
 // Position of nav--main in the window
 let nav_main = document.querySelector('.nav--main');
 let nav_container = document.querySelector(".nav-container");
