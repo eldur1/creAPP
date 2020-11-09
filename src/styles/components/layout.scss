@@ -21,9 +21,9 @@ html {
 }
 
 .section {
-  &:not(.section--intro):not(.section--footer) {
+  &:not(.section--intro):not(.section--footer):not(.section--main) {
     background-color: $c-dark;
-    margin: 5%;
+    margin:16px;
   }
   &--intro {
     position: relative;
