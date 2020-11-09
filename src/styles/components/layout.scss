@@ -52,6 +52,9 @@ html {
     flex-direction: column;
   }
   &--content {
+    @include tbx {
+      display: flex;
+    }
     
     &__about {
       @include tbx {
@@ -80,8 +83,12 @@ html {
 
 .borne{
   margin: 0 auto;
-  width: 90%;
+  width: 50%;
   margin: 10% auto 0;
+  display: block;
+  @include tbx {
+    width: 90%;
+  }
 }
 
 
