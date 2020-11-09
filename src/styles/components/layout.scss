@@ -51,6 +51,10 @@ html {
     display: flex;
     flex-direction: column;
   }
+  &--markdown {
+    max-width: 500px;
+    margin: auto;
+  }
   &--content {
     @include tbx {
       display: flex;
@@ -90,7 +94,17 @@ html {
     width: 90%;
   }
 }
+.img {
+  &--case-study {
+    width: 80%;
+    margin:auto;
+    display: block;
+  }
+  &--white {
+    background-color: white;
+  }
 
+}
 
 .logo {
   width: 58px;
