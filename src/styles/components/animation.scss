@@ -1,14 +1,14 @@
 .logo--nav {
   &:before {
-      content: '';
-      position: absolute;
-      left: -25%;
-      top: -25%;
-      width: 150%;
-      height: 150%;
-      background: conic-gradient(#ff0000, #FFE600, #14FF00, #03FCFC, #F703FC, #FF0000);
-      animation: spin 5s infinite linear;
-      z-index: -1;
+    content: "";
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    width: 150%;
+    height: 150%;
+    background: conic-gradient(#ff0000, #FFE600, #14FF00, #03FCFC, #F703FC, #FF0000);
+    animation: spin 5s infinite linear;
+    z-index: -1;
     }
 }
   @keyframes spin {

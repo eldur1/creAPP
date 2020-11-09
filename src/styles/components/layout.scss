@@ -24,6 +24,7 @@ html {
   &:not(.section--intro):not(.section--footer):not(.section--main) {
     background-color: $c-dark;
     margin:30px;
+    width: auto;
   }
   &--intro {
     position: relative;
@@ -74,7 +75,7 @@ html {
 
 .alignLeft {
   margin-left: 30px;
-  width: 100%;
+  width: 80%;
 }
 
 .borne{
@@ -93,12 +94,11 @@ html {
     margin: 0 0 10% 0;
   }
   &--nav {
-    width: 60px;
-    height: 60px;
-    margin: 0 0 0 32px;
-    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 0px 0 0 20px;
+    position: relative;
     overflow: hidden;
-    display: none; // Il est casse couille
     z-index: 1;
     @include tbx {
       position: relative;
@@ -135,11 +135,16 @@ html {
   margin-bottom: 50px;
 }
 
-.members .link {
-  margin: 16px 0 0 0;
+.members {
+  display: flex;
+  flex-direction: column;
+  &.link {
+    margin: 16px 0 0 0;
+  }
 }
 
 .member{
+  align-self: center;
   max-width: 200px;
   border-radius: 100%;
 }
