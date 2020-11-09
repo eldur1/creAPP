@@ -15,11 +15,14 @@
     &--bold {
       font-weight: 700;
     }
+    &--small {
+      font-weight: bold;
+    }
   }
 
   .section {
     &:not(.section--intro):not(.section--footer):not(.section--main) {
-      margin:80px;
+      margin:80px auto;
     }
   }
 
@@ -89,9 +92,6 @@
 }
 
 @media screen and (min-width: 900px) {
-  .section {
-
-  }
   .alignLeft {
     width: 550px;
   }

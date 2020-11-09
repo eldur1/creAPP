@@ -51,7 +51,14 @@ html {
     display: flex;
     flex-direction: column;
   }
+  &--markdown {
+    max-width: 500px;
+    margin: auto;
+  }
   &--content {
+    @include tbx {
+      display: flex;
+    }
     
     &__about {
       @include tbx {
@@ -80,12 +87,24 @@ html {
 
 .borne{
   margin: 0 auto;
-  width: 90%;
-  height: 500px;
-  background-color: grey;
+  width: 50%;
   margin: 10% auto 0;
+  display: block;
+  @include tbx {
+    width: 90%;
+  }
 }
+.img {
+  &--case-study {
+    width: 80%;
+    margin:auto;
+    display: block;
+  }
+  &--white {
+    background-color: white;
+  }
 
+}
 
 .logo {
   width: 58px;
