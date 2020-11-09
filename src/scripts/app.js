@@ -375,12 +375,6 @@ let datas =
 ]
 
 
-
-
-
-
-
-
 import { gsap } from 'gsap';
 import { _numWithUnitExp } from 'gsap/gsap-core';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -422,16 +416,9 @@ randomBtn.addEventListener("click", (e) => {
     qrCode.style.display = "block";
 });
 
-
-
-
-
-
-
-// 
-
 // Position of nav--main in the window
-let nav_main = document.querySelector(".nav-container");
+let nav_main = document.querySelector('.nav--main');
+let nav_container = document.querySelector(".nav-container");
 let wHeight = window.innerHeight;
 let closeMenu = document.querySelector('.link--close-menu');
 // Affiche ou non le bouton close menu
@@ -469,26 +456,37 @@ let toggle = true;
 let burger = document.querySelector('.burger-menu');
 burger.addEventListener('click', () => {
     let wWidth = window.innerWidth
-    gsap.to(nav_main, {
+    gsap.to(burger, {
+        opacity:0
+    })
+    gsap.to(nav_container, {
         x:-wWidth
     });
+    document.body.style.overflowY = "hidden";
+        // La nav est en fixed
+    setTimeout(() => {
+        nav_main.style.position = "fixed";
+    }, 1000);
     toggle = false;
 });
 
 function closeAnimation() {
     let wWidth = window.innerWidth;
-    gsap.to(nav_main, {
+    gsap.to(nav_container, {
         x:0
     });
+    gsap.to(burger, {
+        opacity:1
+    })
+    document.body.style.overflowY = "visible";
+
     toggle = true;
 }
-function toggleSelection() {
 
-}
-   
 function menu() {
     closeAnimation()
-    toggleSelection()
+    nav_main.style.position = "sticky";
+
 }
 let link_main = document.querySelectorAll('.link--main');
 for(let i=1; i < link_main.length; i++ ) {

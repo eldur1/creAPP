@@ -43,6 +43,7 @@ ul {
   top:60px;
   width:100%;
   background-color: $c-darker;
+  height: calc(100% - 60px);
   .list {
     &--main__li {
       display: block;
