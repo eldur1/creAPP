@@ -17,6 +17,12 @@
     }
   }
 
+  .section {
+    &:not(.section--intro):not(.section--footer):not(.section--main) {
+      margin:80px;
+    }
+  }
+
   .team-grid {
     display: flex;
     flex-direction: column;
@@ -36,7 +42,6 @@
   }
 
   .logo {
-    width: 58px;
     &--full {
       width: 300px;
       margin: 0 0 50px 0;
@@ -44,10 +49,6 @@
     &--footer {
       width:150px;
     }
-  }
-
-  .link {
-    margin: 16px 0 0 30px;
   }
 
   .members{
@@ -58,6 +59,14 @@
     &:nth-child(2n){
       flex-direction: row-reverse;
     }
+
+    &.link {
+      margin: 16px 0 0 0;
+    }
+  }
+
+  .link {
+    margin: 16px 0 0 30px;
   }
 
   .nav {
@@ -76,26 +85,52 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
+  .section {
+    &:not(.section--intro):not(.section--footer):not(.section--main) {
+      margin:10em 10em 0 10em ;
+    }
+  }
   .alignLeft {
     width: 550px;
   }
 
   .logo {
+    &--nav {
+      width: 50px;
+      height: 50px;
+    }
     &--full {
       width: 350px;
     }
   }
 
-  .nav--footer {
-    margin: auto;
-    padding-top:188px;
-}
   .nav {
+    &--main {
+      height: 80px;
+    }
     &--footer {
     max-width: 780px;
+    margin: auto;
+    padding-top:188px;
+    }
   }
+
+  .nav-container {
+    width:auto;
+    background-color: transparent;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+
+  .nav-container .list--main__li {
+    margin: 0 10px 0 0;
 }
+
+.link--main {
+  margin: 0;
+}
+
 .members{
   display: flex;
   flex-direction: row;
@@ -108,6 +143,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+  .section {
+    &:not(.section--intro):not(.section--footer):not(.section--main) {
+      margin:15em 20em 0 20em ;
+    }
+  }
 }
 
