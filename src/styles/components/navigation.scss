@@ -38,7 +38,6 @@ ul {
 
 }
 .nav-container {
-  display: none;
   position: absolute;
   left:100%;
   top:0%;
@@ -84,7 +83,7 @@ ul {
   &--main {
     position: sticky;
     top:0px;
-    
+    left:100%;
     z-index:4;
 
   }
