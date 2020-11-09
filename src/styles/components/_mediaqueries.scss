@@ -1,53 +1,100 @@
 @media screen and (min-width: 768px){
-    .title {
-        font-weight: 300;
-        &--bigger {
-          display: none;;
-        }
-        &--big {
-          font-size: 1.25rem;
-        }
-        &--medium {
-          font-size: 3.815rem;
-          font-weight: 500;
-        }
-      
-        &--bold {
-          font-weight: 700;
-        }
-      }
+  .title {
+    font-weight: 300;
+    &--bigger {
+      display: none;;
+    }
+    &--big {
+      font-size: ms(1);
+    }
+    &--medium {
+      font-size: ms(4);
+      font-weight: 500;
+    }
+  
+    &--bold {
+      font-weight: 700;
+    }
+  }
 
-      .logo {
-        width: 58px;
-        &--full {
-          width: 80%;
-          margin: 0 0 70px 0;
-        }
-        &--nav {
-          width: 60px;
-          height: 60px;
-          margin: 0 0 0 32px;
-          position: absolute;
-          overflow: hidden;
-          display: none; // Il est casse couille
-          z-index: 1;
-          @include tbx {
-            position: relative;
-          }
-      
-        }
-        &--footer {
-          position: absolute;
-          width:150px;
-          text-align: left;
-          margin-top:-74px;
-        }
-      }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .alignLeft {
+    width: 450px;
+  }
+
+  .borne {
+    width: 300px;
+  }
+
+  .logo {
+    width: 58px;
+    &--full {
+      width: 300px;
+      margin: 0 0 50px 0;
+    }
+    &--footer {
+      width:150px;
+    }
+  }
+
+  .link {
+    margin: 16px 0 0 30px;
+  }
+
+  .members{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &:nth-child(2n){
+      flex-direction: row-reverse;
+    }
+  }
+
+  .nav {
+    &--footer {
+      max-width: 600px;
+      margin: auto;
+    }
+  }
+  .nav ul {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    
+  .alignLeft {
+    width: 550px;
+  }
 
+  .logo {
+    &--full {
+      width: 350px;
+    }
+  }
+
+  .nav--footer {
+    margin: auto;
+}
+  .nav {
+    &--footer {
+    max-width: 780px;
+  }
+}
+.members{
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+
+  &:nth-child(2n){
+    flex-direction: row-reverse;
+  }
+}
 }
 
 @media screen and (min-width: 1440px) {

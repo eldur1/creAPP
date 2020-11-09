@@ -73,11 +73,12 @@ ul {
   &--footer {
     text-align: left;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 16px;
     line-height: 32px;
     max-width: 780px;
-    margin:auto;
+    margin: 30px;
     padding-top:188px;
   }
   &--main {
@@ -88,7 +89,6 @@ ul {
 
   }
 }
-
 
 .link {
   color:$c-alt;
