@@ -76,8 +76,8 @@
       </div>
       <img alt="Borne en 3D" src="assets/images/borne.png" class="borne" />
     </section>
-    <section class="section section--join">
     <span id="join_us" class="anchor anchor--project"></span>
+    <section class="section section--join">
       <h3 class="title title--medium">Join Us</h3>
         <p class="alignLeft">Our database now includes many foundations of all types. Enrich it by adding your own if it is not already part of it!</p>
         <ul class="associations">
@@ -94,6 +94,18 @@
         </ul>
         <a class="link link--partner" href="#join_us">Be partner</a>
     </section>
+    <section class="section section--donate">
+      <span id="donate" class="anchor anchor--project"></span>
+  
+        <h3 class="title title--medium title--donate">Make a donation</h3>
+        <p class="alignLeft">Ask the prism and it will choose randomly for you a world foundation in which you can make your donation of 5€.</p>
+        <p class="alignLeft">Get involved and shape a better world !</p>
+        <button class="random-btn">Random foundation&nbsp;!</button>
+        <svg id="elemid" style="height:256px; margin:30px;"></svg>
+        <a class="asso-name">Nom de l'asso</a>
+        <p class="asso-descr">Description de l'asso</p>
+        <button class="donation-btn">Make your donation</button>
+      </section>
     <span id="team" class="anchor anchor--project"></span>
     <section class="section section--team">
       <h3 class="title title--medium">Our Team</h3>
@@ -136,9 +148,10 @@
         </div>
       </div>
     </section>
+    <span id="markdown" class="anchor anchor--project"></span>
+
     <section class="section section--markdown">
-      <span id="markdown" class="anchor anchor--project"></span>
-      <h3 class="title title--medium">How-to</h3>
+      <h3 class="title title--medium">How-to (in french)</h3>
       <h4 class="title title--small alignLeft">Brainstorming</h4>
       <p class="alignLeft">Nous sommes partis de différents mots qui sont “aléatoire prisme distant engagement”. Après plusieurs discussions il en d’abord ressortis différentes idées tels qu’un prisme changeant de couleurs selon la température ou la pollution, un prisme écran qui affiche des couleurs selon le taux de pollution d&#39;une position aléatoire dans le monde. On secoue l&#39;objet pour changer de lieu. Nous avons finalement choisi de réaliser une borne sur laquelle il y aurait un prisme en mélangeant les idées d’Elie et de William.</p>
       <p class="alignLeft">Cette borne permettrait de faire un don à une association choisie aléatoirement par un programme. Cette borne pourrait être déplacée à travers le monde. Après avoir trouvé l’idée, nous avons constitué tous ensemble une liste de plusieurs associations à travers le monde.</p>
@@ -153,18 +166,6 @@
       <p class="alignLeft">Les dons seront faits grâce à un QR code qui a été réalisé par Elie. Il a utilisé une librairie nommée <a class="link link--text" href='https://www.npmjs.com/package/@dipser/epc-qr-code.js'>Girocode</a> qui a permis de générer un QR code <a class="link link--text" href='https://fr.wikipedia.org/wiki/Espace_unique_de_paiement_en_euros'>SEPA</a>. Celui-ci a été utilisé avec un JSON créé par William qui reprenait une liste de différentes associations à travers le monde que nous avions créé tous ensemble.</p>
       <p class="alignLeft">Après qu’on nous ait dit que notre site était “trop luxueux”, nous l’avons changé pour le rendre plus sobre. En effet nous utilisions des aplats de couleurs qui donnaient un aspect de luxe au site, une fois ceux-ci retirés le site était beaucoup plus approprié.<img class="img img--case-study" src="/assets/images/intro.jpg" referrerpolicy="no-referrer" alt="intro"></p>
     </section>
-    <section class="section section--donate">
-    <span id="donate" class="anchor anchor--project"></span>
-
-      <h3 class="title title--medium title--donate">Make a donation</h3>
-      <p class="alignLeft">Ask the prism and it will choose randomly for you a world foundation in which you can make your donation of 5€.</p>
-      <p class="alignLeft">Get involved and shape a better world !</p>
-      <button class="random-btn">Random foundation&nbsp;!</button>
-      <svg id="elemid" style="height:256px; margin:30px;"></svg>
-      <a class="asso-name">Nom de l'asso</a>
-      <p class="asso-descr">Description de l'asso</p>
-      <button class="donation-btn">Make your donation</button>
-    </section>
   </main>
   <footer class="section section--footer">
     <nav class="nav nav--footer">
@@ -175,7 +176,7 @@
       </ul>
       <ul class="list list--footer">
         <li class="list--footer__li">Navigation</li>
-        <li class="list--footer__li"><a class="link link--footer" href="#">Project</a></li>
+        <li class="list--footer__li"><a class="link link--footer" href="#project">Project</a></li>
         <li class="list--footer__li"><a class="link link--footer" href="#markdown">Case study</a></li>
         <li class="list--footer__li"><a class="link link--footer" href="#team">Team</a></li>
         <li class="list--footer__li"><a class="link link--footer" href="#join_us">Join us</a></li>
@@ -189,7 +190,7 @@
         <li class="list--footer__li"><a target="_blank" class="link link--footer" href="http://www.jeromehaesen.be/">Jérome</a></li>
       </ul>
     </nav>
-    <p class="section--footer__copyright text-small">Developed by 5 extraordinary people ❤️ <br> Thanks to Louis for his help !</p>
+    <p class="section--footer__copyright text-small">Developed by 5 extraordinary people ❤️ <br> Thanks to <a target="_blank" href="https://mamboleoo.be/" class="link link--small">Louis</a> for his help !</p>
   </footer>
 </body>
 </html>
